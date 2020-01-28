@@ -10,7 +10,7 @@ services:
       # docker in docker
       - /var/run/docker.sock:/var/run/docker.sock
       # optional: jenkins persistent jenkins
-      - ./.jenkins_home:/var/jenkins_home
+      - ./jenkins_home:/var/jenkins_home
       # optional: logging
       #- ./config:/var/jenkins_config
       # optional: jenkins system configuration
