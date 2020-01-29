@@ -1,0 +1,74 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.36">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.5.0"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.5.0">
+      <jobProperties/>
+      <triggers>
+        <string>org.jenkinsci.plugins.gwt.GenericTrigger</string>
+      </triggers>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.11"/>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <org.jenkinsci.plugins.gwt.GenericTrigger plugin="generic-webhook-trigger@1.66">
+          <spec></spec>
+          <genericVariables>
+            <org.jenkinsci.plugins.gwt.GenericVariable>
+              <key>refId</key>
+              <value>$.refId</value>
+            </org.jenkinsci.plugins.gwt.GenericVariable>
+          </genericVariables>
+          <regexpFilterText>$refId</regexpFilterText>
+          <regexpFilterExpression>refs/heads/.*</regexpFilterExpression>
+          <printPostContent>true</printPostContent>
+          <printContributedVariables>true</printContributedVariables>
+          <causeString>Triggered on $refId</causeString>
+          <token>abc123</token>
+          <silentResponse>false</silentResponse>
+        </org.jenkinsci.plugins.gwt.GenericTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.78">
+    <script>pipeline {
+  agent any
+  triggers {
+    GenericTrigger(
+     genericVariables: [
+      [key: &apos;refId&apos;, value: &apos;$.refId&apos;]
+     ],
+
+     causeString: &apos;Triggered on $refId&apos;,
+
+     token: &apos;abc123&apos;,
+
+     printContributedVariables: true,
+     printPostContent: true,
+
+     silentResponse: false,
+
+     regexpFilterText: &apos;$refId&apos;,
+     regexpFilterExpression: &apos;refs/heads/.*&apos;
+    )
+  }
+  stages {
+    stage(&apos;Some step&apos;) {
+      steps {
+        sh &quot;export&quot;
+        sh &quot;echo $refId&quot;
+      }
+    }
+  }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
