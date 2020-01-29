@@ -5,19 +5,14 @@
     <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.5.0">
       <jobProperties/>
       <triggers/>
-      <parameters>
-        <string>password</string>
-        <string>dry</string>
-        <string>message</string>
-        <string>choice</string>
-        <string>version</string>
-      </parameters>
+      <parameters/>
       <options/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
   </actions>
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.11"/>
     <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
       <triggers>
         <hudson.triggers.SCMTrigger>
@@ -26,42 +21,6 @@
         </hudson.triggers.SCMTrigger>
       </triggers>
     </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
-    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.11"/>
-    <hudson.model.ParametersDefinitionProperty>
-      <parameterDefinitions>
-        <hudson.model.BooleanParameterDefinition>
-          <name>dry</name>
-          <description>flag paramter</description>
-          <defaultValue>true</defaultValue>
-        </hudson.model.BooleanParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>version</name>
-          <description>app version</description>
-          <defaultValue>0.0.1</defaultValue>
-          <trim>false</trim>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.TextParameterDefinition>
-          <name>message</name>
-          <description>text message</description>
-          <defaultValue>long way run to the home</defaultValue>
-          <trim>false</trim>
-        </hudson.model.TextParameterDefinition>
-        <hudson.model.ChoiceParameterDefinition>
-          <name>choice</name>
-          <description>choice your favorite</description>
-          <choices>
-            <string>One</string>
-            <string>Two</string>
-            <string>Three</string>
-          </choices>
-        </hudson.model.ChoiceParameterDefinition>
-        <hudson.model.PasswordParameterDefinition>
-          <name>password</name>
-          <description>choice your favorite</description>
-          <defaultValue>{AQAAABAAAAAQhby2Cnt2Z4++JYPIpy7BqxYkuFlH5NCNTNn+RR29c4c=}</defaultValue>
-        </hudson.model.PasswordParameterDefinition>
-      </parameterDefinitions>
-    </hudson.model.ParametersDefinitionProperty>
   </properties>
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2.78">
     <scm class="hudson.plugins.git.GitSCM" plugin="git@4.1.1">
@@ -81,7 +40,7 @@
       <submoduleCfg class="list"/>
       <extensions/>
     </scm>
-    <scriptPath>.jenkins/parameters-pipeline.groovy</scriptPath>
+    <scriptPath>.jenkins/agent-docker-stage_pipeline.groovy</scriptPath>
     <lightweight>true</lightweight>
   </definition>
   <triggers/>
