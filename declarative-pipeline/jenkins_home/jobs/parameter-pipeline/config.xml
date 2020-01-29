@@ -38,7 +38,7 @@
           <name>version</name>
           <description>app version</description>
           <defaultValue>0.0.1</defaultValue>
-          <trim>false</trim>
+          <trim>true</trim>
         </hudson.model.StringParameterDefinition>
         <hudson.model.TextParameterDefinition>
           <name>message</name>
@@ -58,7 +58,7 @@
         <hudson.model.PasswordParameterDefinition>
           <name>password</name>
           <description>choice your favorite</description>
-          <defaultValue>{AQAAABAAAAAQhby2Cnt2Z4++JYPIpy7BqxYkuFlH5NCNTNn+RR29c4c=}</defaultValue>
+          <defaultValue>{AQAAABAAAAAQerA108rLqDXecQ0TeGS4HKQu+K1Xkpdqdwyj0lunKhU=}</defaultValue>
         </hudson.model.PasswordParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
