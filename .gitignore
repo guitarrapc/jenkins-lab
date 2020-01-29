@@ -1,3 +1,10 @@
 **/jenkins_home/
+!declarative-pipeline/jenkins_home/
+declarative-pipeline/jenkins_home/*
+!declarative-pipeline/jenkins_home/jobs
+!declarative-pipeline/jenkins_home/jobs/**/config.xml
+declarative-pipeline/jenkins_home/jobs/**/builds/
 nextBuildNumber
+lastStable
+lastSuccessful
 *.log

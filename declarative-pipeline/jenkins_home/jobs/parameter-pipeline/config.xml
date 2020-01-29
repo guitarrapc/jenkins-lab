@@ -18,7 +18,6 @@
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.11"/>
     <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
       <triggers>
         <hudson.triggers.SCMTrigger>
@@ -27,6 +26,7 @@
         </hudson.triggers.SCMTrigger>
       </triggers>
     </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.11"/>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
         <hudson.model.BooleanParameterDefinition>
@@ -58,7 +58,7 @@
         <hudson.model.PasswordParameterDefinition>
           <name>password</name>
           <description>choice your favorite</description>
-          <defaultValue>{AQAAABAAAAAQwLrq/zY6gR4HqrmsAY/JL22VukxnMWOgxRzpkWSdmtY=}</defaultValue>
+          <defaultValue>{AQAAABAAAAAQGvw9TzgQmbCRSm+edPlDKMZ8L2FU6XksKfsqSdKBUr0=}</defaultValue>
         </hudson.model.PasswordParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
