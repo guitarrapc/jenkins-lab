@@ -7,8 +7,6 @@ services:
     image: jenkins_declarative-pipeline
     container_name: jenkins_declarative-pipeline
     volumes:
-      # docker in docker
-      - /var/run/docker.sock:/var/run/docker.sock
       # optional: jenkins persistent jenkins
       - ./jenkins_home:/var/jenkins_home
       # optional: logging
@@ -16,9 +14,23 @@ services:
       # optional: jenkins system configuration
       - ./init.groovy/executors.groovy:/usr/share/jenkins/ref/init.groovy.d/executors.groovy
     environment:
+      # docker-in-docker
+      - DOCKER_HOST=tcp://socat:2375
       - JAVA_OPTS=-Duser.timezone=Asia/Tokyo -Dfile.encoding=UTF-8
       # optional: logging handling
       #- JAVA_OPTS=-Duser.timezone=Asia/Tokyo -Dfile.encoding=UTF-8 -Djava.util.logging.config.file=/var/jenkins_config/log.properties
     ports:
       - 50003:50000
       - 8083:8080
+    links:
+      - socat
+
+  # user socat to achieve docker-in-docker for jenkins user without `usermod -a -G docker jenkins` or `chmod 664 /var/run/docker.sock`.
+  # ref: https://medium.com/@mingheng/solving-permission-denied-while-trying-to-connect-to-docker-daemon-socket-from-container-in-mac-os-600c457f1276
+  socat:
+     image: bpack/socat
+     command: TCP4-LISTEN:2375,fork,reuseaddr UNIX-CONNECT:/var/run/docker.sock
+     volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
+     expose:
+        - "2375"
