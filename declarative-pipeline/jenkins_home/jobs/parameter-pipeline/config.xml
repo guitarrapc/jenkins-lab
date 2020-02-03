@@ -57,8 +57,8 @@
         </hudson.model.ChoiceParameterDefinition>
         <hudson.model.PasswordParameterDefinition>
           <name>password</name>
-          <description>choice your favorite</description>
-          <defaultValue>{AQAAABAAAAAQ8fryW0I4PeZTHjeS3T5S1JmCvvTgCcM2ciQ2sVLurFU=}</defaultValue>
+          <description>your secret</description>
+          <defaultValue>{AQAAABAAAAAQi23iW4//mJaY4u+bZXHhSRzzZe+EXmZhnnJ1LPZobqg=}</defaultValue>
         </hudson.model.PasswordParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
