@@ -5,6 +5,8 @@ docker-compose build
 docker-compose up
 ```
 
+go to http://localhost:8081 to launch jenkins.
+
 ## Prepare Jenkins
 
 Add Following Plugins

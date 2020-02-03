@@ -14,4 +14,6 @@ you can add your own job and try how it works.
 
 1. add pipeline groovy to your repo or `./job_dsls` folder.
 1. add dsl to `./job_dsls/` and reference your repo or dsl file.
-1. open jenkins -> jobs -> your job, and run build.
+1. open `./casc_configs/jobs.yaml` and add file reference to `./job_dsls/your_job.dsl`.
+1. reload via `open jenkins -> Manage Jenkins -> Configuration as Code -> Reload existing configuration`.
+1. run build via `open jenkins -> jobs -> your job -> build`.
