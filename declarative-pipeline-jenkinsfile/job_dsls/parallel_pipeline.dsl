@@ -5,7 +5,7 @@ pipelineJob('parallel_pipeline') {
             scm {
                 git {
                     remote {
-                      url 'https://github.com/guitarrapc/jenkins-pipeline-lab.git'
+                      url '${JOB_GITHUB_REPO}/jenkins-pipeline-lab.git'
                       credentials('github')
                     }
                     branch '*/master'
