@@ -8,11 +8,17 @@ docker-compose up
 
 go to http://localhost:8084 to launch jenkins.
 
+## Pipeline repo
+
+pipeline groovy files are reference to other repogistory guitarrapc/jenkins-pipeline-lab.
+
+> [guitarrapc/jenkins\-pipeline\-lab](https://github.com/guitarrapc/jenkins-pipeline-lab)
+
 ## Add jobs
 
 you can add your own job and try how it works.
 
-1. add pipeline groovy to your repo or `./job_dsls` folder.
+1. add pipeline groovy to [pipeline repo](https://github.com/guitarrapc/jenkins-pipeline-lab) or local `./job_dsls` folder.
 1. add dsl to `./job_dsls/` and reference your repo or dsl file.
 1. open `./casc_configs/jobs.yaml` and add file reference to `./job_dsls/your_job.dsl`.
 1. reload via `open jenkins -> Manage Jenkins -> Configuration as Code -> Reload existing configuration`.
