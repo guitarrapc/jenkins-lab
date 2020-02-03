@@ -28,3 +28,14 @@ jenkins:
   remotingSecurity:
     enabled: true
 
+  views:
+  - all:
+      name: "all"
+  - list:
+      name: "pipelines"
+      includeRegex: ".*_pipeline$"
+  - list:
+      name: "docker pipelines"
+      includeRegex: ".*docker.*_pipeline$"
+      statusFilter: true # enabled job only
+  viewsTabBar: "standard"
