@@ -17,3 +17,10 @@ you can add your own job and try how it works.
 1. open `./casc_configs/jobs.yaml` and add file reference to `./job_dsls/your_job.dsl`.
 1. reload via `open jenkins -> Manage Jenkins -> Configuration as Code -> Reload existing configuration`.
 1. run build via `open jenkins -> jobs -> your job -> build`.
+
+## ref
+
+reference other projects
+
+* [Praqma/praqma\-jenkins\-casc: Repository for our casc demo setup](https://github.com/Praqma/praqma-jenkins-casc)
+* [biz\-nakashima001/jcasc: jcasc test](https://github.com/biz-nakashima001/jcasc)
