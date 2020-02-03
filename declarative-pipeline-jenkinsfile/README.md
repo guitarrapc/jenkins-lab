@@ -18,6 +18,12 @@ you can add your own job and try how it works.
 1. reload via `open jenkins -> Manage Jenkins -> Configuration as Code -> Reload existing configuration`.
 1. run build via `open jenkins -> jobs -> your job -> build`.
 
+snippet to generate jobs.yaml content.
+
+```shell
+ls |  %{"  - file: /var/jenkins_job/job_dsls/$($_.Name)"}
+```
+
 ## ref
 
 reference other projects

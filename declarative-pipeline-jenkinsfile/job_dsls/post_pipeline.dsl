@@ -1,7 +1,7 @@
-pipelineJob('echo_pipeline') {
+pipelineJob('post_pipeline') {
     definition {
         cpsScm {
-            scriptPath 'pipelines/echo_pipeline.groovy'
+            scriptPath 'pipelines/post_pipeline.groovy'
             scm {
                 git {
                     remote {

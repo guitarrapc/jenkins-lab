@@ -32,7 +32,7 @@
       <submoduleCfg class="list"/>
       <extensions/>
     </scm>
-    <scriptPath>.jenkins/host-docker_pipeline.groovy</scriptPath>
+    <scriptPath>pipelines/host-docker_pipeline.groovy</scriptPath>
     <lightweight>true</lightweight>
   </definition>
   <triggers/>

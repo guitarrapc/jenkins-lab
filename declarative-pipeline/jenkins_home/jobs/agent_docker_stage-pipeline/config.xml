@@ -40,7 +40,7 @@
       <submoduleCfg class="list"/>
       <extensions/>
     </scm>
-    <scriptPath>.jenkins/agent-docker-stage_pipeline.groovy</scriptPath>
+    <scriptPath>pipelines/agent-docker-stage_pipeline.groovy</scriptPath>
     <lightweight>true</lightweight>
   </definition>
   <triggers/>

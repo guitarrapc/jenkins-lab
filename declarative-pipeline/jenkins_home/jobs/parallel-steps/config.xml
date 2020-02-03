@@ -40,7 +40,7 @@
       <submoduleCfg class="list"/>
       <extensions/>
     </scm>
-    <scriptPath>.jenkins/parallelsteps_pipeline.groovy</scriptPath>
+    <scriptPath>pipelines/parallelsteps_pipeline.groovy</scriptPath>
     <lightweight>true</lightweight>
   </definition>
   <triggers/>

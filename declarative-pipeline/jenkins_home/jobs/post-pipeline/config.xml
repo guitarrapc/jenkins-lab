@@ -40,7 +40,7 @@
       <submoduleCfg class="list"/>
       <extensions/>
     </scm>
-    <scriptPath>.jenkins/post_pipeline.groovy</scriptPath>
+    <scriptPath>pipelines/post_pipeline.groovy</scriptPath>
     <lightweight>true</lightweight>
   </definition>
   <triggers/>

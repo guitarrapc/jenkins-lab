@@ -52,7 +52,7 @@
       <submoduleCfg class="list"/>
       <extensions/>
     </scm>
-    <scriptPath>.jenkins/options_pipeline.groovy</scriptPath>
+    <scriptPath>pipelines/options_pipeline.groovy</scriptPath>
     <lightweight>true</lightweight>
   </definition>
   <triggers/>

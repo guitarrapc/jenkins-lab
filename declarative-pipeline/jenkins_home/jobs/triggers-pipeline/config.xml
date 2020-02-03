@@ -44,7 +44,7 @@
       <submoduleCfg class="list"/>
       <extensions/>
     </scm>
-    <scriptPath>.jenkins/triggers_pipeline.groovy</scriptPath>
+    <scriptPath>pipelines/triggers_pipeline.groovy</scriptPath>
     <lightweight>true</lightweight>
   </definition>
   <triggers/>

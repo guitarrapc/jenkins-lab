@@ -1,2 +1,15 @@
 jobs:
+  - file: /var/jenkins_job/job_dsls/agent-docker-stage_pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/agent-docker_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/echo_pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/environment_pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/host-docker_pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/options_pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/parallelsteps_pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/parallel_pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/parameters-pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/post_pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/retry_pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/sh_pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/triggers_pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/when_pipeline.dsl
