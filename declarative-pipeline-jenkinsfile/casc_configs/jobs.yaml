@@ -1,4 +1,5 @@
 jobs:
+  - file: /var/jenkins_job/job_dsls/agent-docker-stage-parallel_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/agent-docker-stage_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/agent-docker_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/echo_pipeline.dsl
