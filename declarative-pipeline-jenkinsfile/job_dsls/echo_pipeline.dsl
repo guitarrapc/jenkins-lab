@@ -4,7 +4,7 @@ pipelineJob('pipeline_github') {
             scriptPath '.jenkins/echo_pipeline.groovy'
             scm {
                 git {
-                    remote { url 'https://github.com/guitarrapc/jenkins-pipeline-lab.git' } //対象githubリポジトリ
+                    remote { url 'https://github.com/guitarrapc/jenkins-pipeline-lab.git' }
                     branch '*/master'
                 }
             }
