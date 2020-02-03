@@ -9,8 +9,8 @@ jenkins:
         env:
           - key: ENV
             value: local
-          - key: PATH
-            value: /usr/local/bin/:$PATH
+          - key: PATH+EXTRA
+            value: /usr/local/bin/
 
   # loging user
   securityRealm:
