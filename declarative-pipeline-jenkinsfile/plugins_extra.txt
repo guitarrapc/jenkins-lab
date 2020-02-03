@@ -6,7 +6,6 @@ matrix-auth:latest
 job-dsl:latest
 workflow-aggregator:latest
 timestamper:latest
-github-oauth:latest
 text-finder:latest
 email-ext:latest
 slack:latest

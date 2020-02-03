@@ -25,6 +25,10 @@ jenkins:
     loggedInUsersCanDoAnything:
       allowAnonymousRead: false
 
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+
   remotingSecurity:
     enabled: true
 

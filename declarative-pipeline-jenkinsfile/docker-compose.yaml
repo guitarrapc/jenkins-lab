@@ -4,8 +4,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: jenkins_declarative-pipeline
-    container_name: jenkins_declarative-pipeline
+    image: declarative-pipeline-jenkinsfile
+    container_name: declarative-pipeline-jenkinsfile
     volumes:
       # jenkins persistent jenkins
       - ./jenkins_home:/var/jenkins_home
