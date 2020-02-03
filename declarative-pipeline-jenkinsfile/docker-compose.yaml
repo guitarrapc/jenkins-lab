@@ -24,7 +24,7 @@ services:
         - adminpw # should be remove before production
         - github # should be remove before production
     ports:
-      - 50003:50000
+      - 50004:50000
       - 8084:8080
     links:
       - socat
