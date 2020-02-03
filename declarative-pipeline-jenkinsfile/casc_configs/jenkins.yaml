@@ -1,0 +1,30 @@
+jenkins:
+  systemMessage: "guitarrapc/jenkins-lab/declarative-pipeline"
+
+  numExecutors: 5
+  scmCheckoutRetryCount: 3
+
+  globalNodeProperties:
+    - envVars:
+        env:
+          - key: ENV
+            value: local
+          - key: PATH
+            value: /usr/local/bin/:$PATH
+
+  # loging user
+  securityRealm:
+    local:
+      allowsSignup: false # no auto login
+      users:
+       - id: ${adminuser:-admin} # from docker-compose
+         password: ${adminpw:-admin} # from docker-compose
+
+  # Global Security - Authorization
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
+
+  remotingSecurity:
+    enabled: true
+

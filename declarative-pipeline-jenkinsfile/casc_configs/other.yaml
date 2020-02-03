@@ -1,0 +1,11 @@
+unclassified:
+
+  location:
+    url: http://localhost:8084/
+
+  githubpluginconfig:
+    configs:
+    - name: "github"
+      apiUrl: "https://api.github.com"
+      credentialsId: "github-token"
+      manageHooks: true

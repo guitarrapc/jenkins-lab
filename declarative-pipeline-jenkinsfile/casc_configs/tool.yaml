@@ -1,0 +1,6 @@
+# Global Tool Configuration
+tool:
+  git:
+    installations:
+      - name: Default
+        home: "git"

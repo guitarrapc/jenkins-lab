@@ -1,0 +1,2 @@
+jobs:
+  - file: /var/jenkins_job/job_dsls/echo_pipeline.dsl
