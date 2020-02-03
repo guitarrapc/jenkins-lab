@@ -1,4 +1,4 @@
-# wolox
+# simple-pr-job
 
 ```shell
 docker-compose build
