@@ -4,6 +4,7 @@ jobs:
   - file: /var/jenkins_job/job_dsls/echo_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/environment_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/host-docker_pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/generic-pr-trigger_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/options_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/parallelsteps_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/parallel_pipeline.dsl
