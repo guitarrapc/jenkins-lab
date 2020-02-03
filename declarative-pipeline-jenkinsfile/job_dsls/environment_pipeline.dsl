@@ -5,7 +5,7 @@ pipelineJob('environment_pipeline') {
             scm {
                 git {
                     remote {
-                      url '${JOB_GITHUB_REPO}/jenkins-pipeline-lab.git'
+                      url '${JOB_GITHUB_REPO}.git'
                       credentials('github')
                     }
                     branch '*/master'

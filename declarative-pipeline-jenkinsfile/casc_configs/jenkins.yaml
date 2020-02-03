@@ -12,7 +12,7 @@ jenkins:
           - key: PATH+EXTRA
             value: /usr/local/bin/
           - key: JOB_GITHUB_REPO
-            value: https://github.com/guitarrapc
+            value: https://github.com/guitarrapc/jenkins-pipeline-lab
 
   # loging user
   securityRealm:
