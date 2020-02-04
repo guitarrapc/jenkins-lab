@@ -1,7 +1,7 @@
-pipelineJob('parameters-pipeline') {
+pipelineJob('nested-stage_pipeline') {
     definition {
         cpsScm {
-            scriptPath 'pipelines/parameters-pipeline.groovy'
+            scriptPath 'pipelines/nested-stage_pipeline.groovy'
             scm {
                 git {
                     remote {

@@ -81,7 +81,7 @@
       <submoduleCfg class="list"/>
       <extensions/>
     </scm>
-    <scriptPath>pipelines/parameters-pipeline.groovy</scriptPath>
+    <scriptPath>pipelines/parameters_pipeline.groovy</scriptPath>
     <lightweight>true</lightweight>
   </definition>
   <triggers/>

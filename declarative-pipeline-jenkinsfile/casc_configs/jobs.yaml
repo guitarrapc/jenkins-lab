@@ -6,10 +6,11 @@ jobs:
   - file: /var/jenkins_job/job_dsls/environment_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/host-docker_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/generic-pr-trigger_pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/nested-stage_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/options_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/parallelsteps_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/parallel_pipeline.dsl
-  - file: /var/jenkins_job/job_dsls/parameters-pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/parameters_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/post_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/retry_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/sh_pipeline.dsl
