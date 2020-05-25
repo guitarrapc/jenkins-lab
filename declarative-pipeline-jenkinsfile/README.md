@@ -38,9 +38,21 @@ ls |  %{"  - file: /var/jenkins_job/job_dsls/$($_.Name)"}
 
 Build badge will offer by [Embeddable Build Status \| Jenkins plugin](https://plugins.jenkins.io/embeddable-build-status/).
 
-<img src="http://localhost:8084/job/catcherror_pipeline/badge/icon?style=flat">
+show badge with following format.
 
-![http://localhost:8084/job/catcherror_pipeline/badge/icon?style=flat]()
+```html
+<img src="http://localhost:8084/job/<job_name>/badge/icon?style=<style>">
+```
+
+samples
+
+```html
+<img src="http://localhost:8084/job/catcherror_pipeline/badge/icon?style=flat">
+```
+
+```md
+![](http://localhost:8084/job/catcherror_pipeline/badge/icon?style=flat)
+```
 
 ## ref
 
