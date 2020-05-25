@@ -1,9 +1,13 @@
-# declarative-pipeline-jenkinsfile
+## declarative-pipeline-jenkinsfile
+
+* Jenkins Version: 2.222.3
+* BlueOcean Version: jenkinsci/blueocean:1.23.2
+
+## Run
 
 ```shell
 echo -n "mytoken" > ./secrets/github
-docker-compose build
-docker-compose up
+docker-compose up --build
 ```
 
 go to http://localhost:8084 to launch jenkins.

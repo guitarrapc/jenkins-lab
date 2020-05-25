@@ -1,4 +1,4 @@
-FROM jenkinsci/blueocean:latest
+FROM jenkinsci/blueocean:1.23.2
 USER root
 
 # (becareful) add sudo and allow jenkins to treat as root
