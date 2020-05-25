@@ -34,6 +34,14 @@ snippet to generate jobs.yaml content.
 ls |  %{"  - file: /var/jenkins_job/job_dsls/$($_.Name)"}
 ```
 
+## Build Badge
+
+Build badge will offer by [Embeddable Build Status \| Jenkins plugin](https://plugins.jenkins.io/embeddable-build-status/).
+
+<img src="http://localhost:8084/job/catcherror_pipeline/badge/icon?style=flat">
+
+![http://localhost:8084/job/catcherror_pipeline/badge/icon?style=flat]()
+
 ## ref
 
 reference other projects

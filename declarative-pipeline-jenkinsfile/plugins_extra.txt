@@ -21,3 +21,4 @@ pipeline-github-lib:latest
 plain-credentials:latest
 throttle-concurrents:latest
 ws-cleanup:latest
+embeddable-build-status:latest
