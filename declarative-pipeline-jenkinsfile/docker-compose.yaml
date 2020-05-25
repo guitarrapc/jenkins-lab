@@ -20,9 +20,9 @@ services:
       # java configuration
       - JAVA_OPTS=-Duser.timezone=Asia/Tokyo -Dfile.encoding=UTF-8
     secrets:
-        - adminuser # should be remove before production
-        - adminpw # should be remove before production
-        - github # should be remove before production
+      - adminuser # should be remove before production
+      - adminpw # should be remove before production
+      - github # should be remove before production
     ports:
       - 50004:50000
       - 8084:8080
@@ -32,12 +32,12 @@ services:
   # user socat to achieve docker-in-docker for jenkins user without `usermod -a -G docker jenkins` or `chmod 664 /var/run/docker.sock`.
   # ref: https://medium.com/@mingheng/solving-permission-denied-while-trying-to-connect-to-docker-daemon-socket-from-container-in-mac-os-600c457f1276
   socat:
-     image: bpack/socat
-     command: TCP4-LISTEN:2375,fork,reuseaddr UNIX-CONNECT:/var/run/docker.sock
-     volumes:
-        - /var/run/docker.sock:/var/run/docker.sock
-     expose:
-        - "2375"
+    image: bpack/socat
+    command: TCP4-LISTEN:2375,fork,reuseaddr UNIX-CONNECT:/var/run/docker.sock
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    expose:
+      - "2375"
 
 # secrets for Jenkins Configuration As Code (cac)
 secrets:
