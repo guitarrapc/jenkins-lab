@@ -3,6 +3,7 @@ jobs:
   - file: /var/jenkins_job/job_dsls/agent-docker-stage_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/agent-docker_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/catcherror_pipeline.dsl
+  - file: /var/jenkins_job/job_dsls/dotnet_build_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/echo_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/environment_pipeline.dsl
   - file: /var/jenkins_job/job_dsls/host-docker_pipeline.dsl
