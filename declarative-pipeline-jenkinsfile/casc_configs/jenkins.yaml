@@ -17,8 +17,8 @@ jenkins:
     local:
       allowsSignup: false # no auto login
       users:
-       - id: ${adminuser:-admin} # from docker-compose
-         password: ${adminpw:-admin} # from docker-compose
+        - id: ${adminuser:-admin} # from docker-compose
+          password: ${adminpw:-admin} # from docker-compose
 
   # Global Security - Authorization
   authorizationStrategy:
@@ -33,13 +33,12 @@ jenkins:
     enabled: true
 
   views:
-  - all:
-      name: "all"
-  - list:
-      name: "pipelines"
-      includeRegex: ".*_pipeline$"
-  - list:
-      name: "docker pipelines"
-      includeRegex: ".*docker.*_pipeline$"
-      statusFilter: true # enabled job only
+    - all:
+        name: "all"
+    - list:
+        name: "pipelines"
+        includeRegex: ".*_pipeline$"
+    - list:
+        name: "docker pipelines"
+        includeRegex: ".*docker.*_pipeline$"
   viewsTabBar: "standard"
