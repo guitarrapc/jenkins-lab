@@ -1,7 +1,6 @@
 credentials:latest
 git:latest
 ssh-slaves:latest
-warnings:latest
 matrix-auth:latest
 job-dsl:latest
 workflow-aggregator:latest
@@ -13,7 +12,6 @@ parameterized-trigger:latest
 copyartifact:latest
 htmlpublisher:latest
 configuration-as-code:latest
-configuration-as-code-support:latest
 build-timeout:latest
 generic-webhook-trigger:latest
 jobConfigHistory:latest
