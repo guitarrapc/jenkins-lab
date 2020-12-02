@@ -60,3 +60,19 @@ reference other projects
 
 * [Praqma/praqma\-jenkins\-casc: Repository for our casc demo setup](https://github.com/Praqma/praqma-jenkins-casc)
 * [biz\-nakashima001/jcasc: jcasc test](https://github.com/biz-nakashima001/jcasc)
+
+
+## FAQ
+
+## update jenkins.yaml and want apply to jenkins
+
+You have 2 way.
+1. Re-rn #Run.
+1. Reload from `Jenkins > System Settings > Configuration as code > Reload existing configuration`.
+
+### How to update plugins
+
+re-run #Run and install plugins again.
+
+> * [Building Jenkins as a code \| Preply Engineering Blog](https://medium.com/preply-engineering/jenkins-omg-275e2df5d647)
+> * [JCasC \(jenkins configuration as code\) の構築 \- Qiita](https://qiita.com/biz-nakashima001/items/03274d89c0aab3a22982)
